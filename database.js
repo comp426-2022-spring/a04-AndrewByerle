@@ -17,7 +17,7 @@ if (row === undefined) {
     console.log('Your database appears to be empty. I will initialize it now.');
 // initialize the database.
     const sqlInit = `
-        CREATE TABLE accesslog ( id INTEGER PRIMARY KEY, remoteaddr VARCHAR, remoteuser TEXT, time VARCHAR, method VARCHAR, url VARCHAR, protocol VARCHAR, httpversion NUMERIC, secure VARCHAR, status NUMERIC, referer VARCHAR, useragent VARCHAR )`;
+        CREATE TABLE accesslog ( id INTEGER PRIMARY KEY, remoteaddr TEXT, remoteuser TEXT, time TEXT, method TEXT, url TEXT, protocol TEXT, httpversion TEXT, secure TEXT, status TEXT, referer TEXT, useragent TEXT )`;
         // INSERT INTO accesslog (username, password) VALUES ('user1','supersecurepassword'),('test','anotherpassword');
      
 // Execute SQL commands that we just wrote above.
